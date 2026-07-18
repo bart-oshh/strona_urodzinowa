@@ -179,8 +179,8 @@ display:none;
 
 .slides img{
 flex:0 0 350px;
-width:350px;
-height:450px;
+width:400px;
+height:515px;
 object-fit:cover;
 border-radius:20px;
 margin-right:20px;
