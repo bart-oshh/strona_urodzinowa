@@ -28,12 +28,38 @@ const slides=document.querySelector(".slides");
 
 document.getElementById("next").onclick=()=>{
 
-slides.scrollBy({
+const slides = document.querySelector(".slides");
+const images = document.querySelectorAll(".slides img");
 
-left:380,
+let current = 0;
 
-behavior:"smooth"
+function showSlide(index){
 
+    if(index < 0)
+        index = images.length-1;
+
+    if(index >= images.length)
+        index = 0;
+
+    current = index;
+
+    slides.scrollTo({
+        left: slides.clientWidth * current,
+        behavior: "smooth"
+    });
+
+}
+
+document.getElementById("next").onclick = () => {
+    showSlide(current + 1);
+}
+
+document.getElementById("prev").onclick = () => {
+    showSlide(current - 1);
+}
+
+window.addEventListener("resize", () => {
+    showSlide(current);
 });
 
 }
