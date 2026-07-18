@@ -288,19 +288,34 @@ overflow:hidden;
 }
 
 .slides{
+display:flex;
+align-items:center;
+overflow-x:auto;
+scroll-behavior:smooth;
+scroll-snap-type:x mandatory;
+scrollbar-width:none;
 width:100%;
+padding:0;
+}
+
+.slides::-webkit-scrollbar{
+display:none;
 }
 
 .slides img{
 flex:0 0 100%;
 width:100%;
-height:60vh;
-max-width:none;
+max-width:100%;
+height:auto;
+max-height:70vh;
 object-fit:contain;
+display:block;
 background:#111;
 padding:8px;
-margin-right:0;
+margin:0;
 border-radius:15px;
+scroll-snap-align:center;
+box-shadow:0 10px 35px rgba(0,0,0,.45);
 }
 
 .slider button{
