@@ -1,22 +1,120 @@
-<style>
-img{
-    width:300px;
-    margin:20px;
-    border-radius:10px;
-}
-</style>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wszystkiego najlepszego!</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<h1>🎉 Wszystkiego najlepszego! 🎉</h1>
+<div id="particles"></div>
 
-<h2>Otrzymujesz oficjalny BON NA SPAWANIE KOŃCÓWEK WYDECHU 🔥</h2>
+<div id="lockScreen">
 
-<p>Ważny do pierwszego wspólnego spotkania 😎</p>
+<div class="lockBox">
 
-<img src="zdjecie1.jpg">
-<img src="zdjecie2.jpg">
+<h1>🔒</h1>
+
+<h2>Wpisz PIN</h2>
+
+<input
+type="password"
+maxlength="8"
+id="pinInput"
+placeholder="********">
+
+<button onclick="checkPin()">Odblokuj</button>
+
+<p id="error"></p>
+
+</div>
+
+</div>
+
+
+<div id="page">
+
+<header>
+
+<h1>🎉 Wszystkiego Najlepszego!</h1>
+
+<p>Dla Pejtora - od całej ekipy 🚗🔥</p>
+
+</header>
+
+
+<section class="gift">
+
+<h2>Twój dodatkowy prezent</h2>
+
+<div class="giftCard">
+
+<img src="img/bon.png">
+
+</div>
+
+</section>
+
+
+
+<section class="gallerySection">
+
+<h2>Nasze wspólne wspomnienia</h2>
+
+<div class="slider">
+
+<button id="prev">&#10094;</button>
+
+<div class="slides">
+
+<img src="gallery/1.jpg">
+
+<img src="gallery/2.jpg">
+
+<img src="gallery/3.jpg">
+
+<img src="gallery/4.jpg">
+
+<img src="gallery/5.jpg">
+
+<img src="gallery/6.jpg">
+
+<img src="gallery/7.jpg">
+
+<img src="gallery/8.jpg">
+
+<img src="gallery/9.jpg">
+
+<img src="gallery/10.jpg">
+
+</div>
+
+<button id="next">&#10095;</button>
+
+</div>
+
+</section>
+
+
+<footer>
+
+❤️ Najlepszego! ~ Orzeł, Kondzio, Rzeszut, Albert
+
+</footer>
+
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
